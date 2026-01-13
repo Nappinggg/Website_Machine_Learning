@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralCore | Головна</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Підключення стилів -->
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <a href="index.html" class="logo">NeuralCore</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Головна</a>
+            <a href="about.html" class="nav-link">Про ML</a>
+            <a href="bigdata.html" class="nav-link">Big Data</a>
+            <a href="contact.html" class="nav-link">Контакти</a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <p style="color: var(--accent-cyan); letter-spacing: 3px; font-weight: 700;">ІНДУСТРІЯ 4.0</p>
+            <h1>Архітектура<br>Штучного Інтелекту</h1>
+            <p>
+                Ми будуємо мости між сирими даними та бізнес-рішеннями. 
+                Використовуйте потужність нейромереж для прогнозування майбутнього.
+            </p>
+            <a href="about.html" class="cta-button">Дізнатися більше</a>
+        </section>
+
+        <!-- ІНТЕРАКТИВНИЙ КЛІКЕР -->
+        <section class="clicker-section">
+            <div class="clicker-container">
+                <div>
+                    <div class="score-board" id="score-val">0</div>
+                    <div class="score-label">Оброблено терабайт даних</div>
+                </div>
+                
+                <div id="neural-core">
+                    TRAIN<br>MODEL
+                </div>
+                
+                <p style="font-size: 0.8rem; margin-top: 10px;">Натискайте на ядро, щоб тренувати нейромережу</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 NeuralCore Analytics. London • Kyiv
+    </footer>
+
+    <script src="script.js"></script> <!-- Підключення скриптів -->
+</body>
+</html>
