@@ -260,3 +260,75 @@ footer {
     font-size: 0.8rem;
     color: var(--accent-cyan);
 }
+/* --- АДАПТИВНІСТЬ (MOBILE RESPONSIVE) --- */
+
+@media (max-width: 768px) {
+    
+    /* 1. Зменшуємо відступи для мобільних */
+    main {
+        padding: 40px 5%; /* Менше відступів збоку */
+    }
+
+    /* 2. Навігація */
+    nav {
+        flex-direction: column; /* Логотип зверху, меню знизу */
+        padding: 15px 20px;
+        gap: 15px;
+        background: rgba(5, 5, 5, 0.95); /* Більш темний фон */
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-between; /* Розтягнути посилання */
+        gap: 10px;
+        overflow-x: auto; /* Горизонтальний скрол, якщо не влазить */
+        padding-bottom: 5px; /* Місце для скролбару */
+    }
+
+    .nav-link {
+        font-size: 0.8rem; /* Менший шрифт */
+        white-space: nowrap; /* Текст не переноситься */
+        padding: 5px 10px;
+    }
+
+    /* 3. Типографіка */
+    h1 {
+        font-size: 2.5rem; /* Менший заголовок */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* 4. Картки в один стовпець */
+    .grid-container {
+        grid-template-columns: 1fr; /* Одна колонка на всю ширину */
+        gap: 20px;
+    }
+
+    /* 5. Клікер */
+    .clicker-section {
+        padding: 20px;
+    }
+    
+    #neural-core {
+        width: 120px;
+        height: 120px; /* Трохи менше ядро */
+    }
+
+    /* 6. Форма */
+    .contact-form {
+        padding: 20px; /* Менші внутрішні відступи */
+    }
+
+    /* 7. Footer */
+    footer {
+        padding: 20px;
+        font-size: 0.7rem;
+    }
+}
+
